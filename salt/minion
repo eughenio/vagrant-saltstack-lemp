@@ -1,0 +1,2 @@
+master: no-salt-master
+file_client: local

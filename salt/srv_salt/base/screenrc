@@ -1,0 +1,20 @@
+
+# Screen startup file
+
+startup_message off
+defscrollback 1000
+
+hardstatus alwayslastline "%{kw}%H | %?%-Lw%?%{wk}%n*%f %t%?(%u)%?%{kw}%?%+Lw%? %=%{kw}%c %d/%m/%Y"
+shelltitle "]\$ |shell"
+
+# Ctrl-arrows
+#bindkey "^[Od" prev
+#bindkey "^[Oc" next
+
+# Ctrl-arrows in console
+#bindkey "^[[d" prev
+#bindkey "^[[c" next
+
+# Ctrl-arrows in Putty?
+#bindkey "^[[D" prev
+#bindkey "^[[C" next
