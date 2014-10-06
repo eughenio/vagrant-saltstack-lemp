@@ -32,7 +32,7 @@ _After install Vagrant(http://www.vagrantup.com/) and Virtualbox(https://www.vir
 13. Disable iptables
 14. Disable ip6tables
 15. Set locale to Brazil - São Paulo
-16. Set a provate network - 192.168.33.30
+16. Set a private network - 192.168.33.30
 
 ### Sudo
 
