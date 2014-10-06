@@ -33,7 +33,7 @@ _After install Vagrant(http://www.vagrantup.com/) and Virtualbox(https://www.vir
 14. Disable ip6tables
 15. _Set locale to Brazil - São Paulo_
 16. _Set a provate network - 192.168.33.30_
-17. _Set a memory VM - 680
+17. _Set a memory VM - 680_
 
 ### Sudo
 
