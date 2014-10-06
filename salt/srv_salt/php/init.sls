@@ -7,7 +7,7 @@ php5-stuff:
       - php5-cli
       - php5-json
       - php5-xdebug
-      
+
 php5enmod:
   cmd.run:
     - name: sudo php5enmod mcrypt
@@ -41,14 +41,12 @@ php5enmod:
   file.managed:
     - source: salt://php/xdebug.sh
     - mode: 755
-    
+
 php5-fpm:
   service:
     - running
     - enable: true
     - reload: true
-    - require:
-      - php5enmod
     - watch:
       - file: /etc/php5/mods-available/xdebug.ini
       - file: /etc/php5/fpm/php.ini
