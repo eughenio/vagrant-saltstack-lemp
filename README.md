@@ -1,6 +1,6 @@
 # _Vagrant Saltstack LEMP_
 
-_Base for a LEMP VM with Virtualbox, Vagrant and Saltstack_
+_Base for a LEMP (Linux, Nginx, Mysql and PHP) VM with Virtualbox, Vagrant and Saltstack_
 
 ## How to
 
@@ -51,7 +51,7 @@ _After install Vagrant(http://www.vagrantup.com/) and Virtualbox(https://www.vir
 ### PHP
 
 1. PHP5
-2. PHP-FPM
+2. PHP5-FPM
 3. php5-mcrypt
 4. php5-mysql
 5. php5-cli
