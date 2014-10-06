@@ -7,17 +7,10 @@ php5-stuff:
       - php5-cli
       - php5-json
       - php5-xdebug
-
-php5-fpm:
-  service:
-    - running
-    - enable: true
-    - reload: true
-    - watch:
-      - file: /etc/php5/mods-available/xdebug.ini
-      - file: /etc/php5/fpm/php.ini
-      - file: /etc/php5/cli/php.ini
-      - file: /etc/php5/fpm/pool.d/www.conf
+      
+php5enmod:
+  cmd.run:
+    - name: sudo php5enmod mcrypt
 
 /etc/php5/fpm/pool.d/www.conf:
   file:
@@ -48,6 +41,19 @@ php5-fpm:
   file.managed:
     - source: salt://php/xdebug.sh
     - mode: 755
+    
+php5-fpm:
+  service:
+    - running
+    - enable: true
+    - reload: true
+    - require:
+      - php5enmod
+    - watch:
+      - file: /etc/php5/mods-available/xdebug.ini
+      - file: /etc/php5/fpm/php.ini
+      - file: /etc/php5/cli/php.ini
+      - file: /etc/php5/fpm/pool.d/www.conf
 
 get-composer:
   cmd.run:
@@ -59,15 +65,5 @@ install-composer:
   cmd.wait:
     - name: mv /root/composer.phar /usr/local/bin/composer
     - cwd: /root/
-    - watch:
-      - cmd: get-composer
-
-php5enmod:
-  cmd.run:
-    - name: sudo php5enmod mcrypt
-
-php5enmod-fpm:
-  cmd.wait:
-    - name: service php5-fpm restart
     - watch:
       - cmd: get-composer
