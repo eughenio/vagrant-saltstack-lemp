@@ -1,17 +1,15 @@
 # _Vagrant Saltstack LEMP_
 
-_Description: Base for a LEMP VM with Virtualbox, Vagrant and Saltstack_
+_Base for a LEMP VM with Virtualbox, Vagrant and Saltstack_
 
 ## How to
 
-_After install Vagrant and Virtualbox in your machine, do you have to do:_
+_After install Vagrant(http://www.vagrantup.com/) and Virtualbox(https://www.virtualbox.org/) in your machine, do you have to do:_
 
 1. _Clone this repo_
 2. _Type in you terminal: vagrant up_
 
 ## What have inside
-
-_Each program, plugin and service inside_
 
 ### SO
 
