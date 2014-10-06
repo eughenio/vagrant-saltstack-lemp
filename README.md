@@ -6,8 +6,8 @@ _Base for a LEMP (Linux, Nginx, Mysql and PHP) VM with Virtualbox, Vagrant and S
 
 _After install Vagrant(http://www.vagrantup.com/) and Virtualbox(https://www.virtualbox.org/) in your machine, do you have to do:_
 
-1. _Clone this repo_
-2. _Type in your terminal: vagrant up_
+1. Clone this repo
+2. Type in your terminal: `vagrant up`
 
 ## What have inside
 
@@ -31,9 +31,9 @@ _After install Vagrant(http://www.vagrantup.com/) and Virtualbox(https://www.vir
 12. mytop
 13. Disable iptables
 14. Disable ip6tables
-15. _Set locale to Brazil - São Paulo_
-16. _Set a provate network - 192.168.33.30_
-17. _Set a memory VM - 680_
+15. Set locale to Brazil - São Paulo
+16. Set a provate network - 192.168.33.30
+17. Set a memory VM - 680
 
 ### Sudo
 
