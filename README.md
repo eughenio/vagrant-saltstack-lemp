@@ -4,7 +4,7 @@ _Base for a LEMP (Linux, Nginx, Mysql and PHP) VM with Virtualbox, Vagrant and S
 
 ## How to
 
-_After install Vagrant(http://www.vagrantup.com/) and Virtualbox(https://www.virtualbox.org/) in your machine, do you have to do:_
+_After install Vagrant(http://www.vagrantup.com/) and Virtualbox(https://www.virtualbox.org/) in your machine, what do you have to do:_
 
 1. Clone this repo
 2. Type in your terminal: `vagrant up`
