@@ -35,6 +35,14 @@ America/Sao_Paulo:
     - user: root
     - group: root
 
+/usr/local/bin/highstate:
+  file:
+    - managed
+    - source: salt://base/highstate
+    - user: root
+    - group: root
+    - mode: 755
+
 iptables:
   service:
     - dead
