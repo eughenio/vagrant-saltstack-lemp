@@ -11,6 +11,7 @@ php5-stuff:
 php5enmod:
   cmd.run:
     - name: sudo php5enmod mcrypt
+    - unless: test -f /etc/php5/fpm/conf.d/20-mcrypt.ini
 
 /etc/php5/fpm/pool.d/www.conf:
   file:
