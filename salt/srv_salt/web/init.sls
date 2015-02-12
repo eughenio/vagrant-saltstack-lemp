@@ -3,6 +3,20 @@ web_pkgs:
     - pkgs:
       - memcached
       - nginx
+      - nodejs
+      - npm
+
+nodebin:
+  cmd.run:
+    - name: 'update-alternatives --install /usr/bin/node node /usr/bin/nodejs 10'
+    - unless: test -f /usr/bin/node
+
+npm_pkgs:
+  npm.installed:
+    - pkgs:
+      - bower
+      - grunt
+      - gulp
 
 /etc/nginx/nginx.conf:
   file:
